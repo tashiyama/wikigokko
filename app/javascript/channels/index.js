@@ -1,8 +1,3 @@
-// Load all the channels within this directory and all subdirectories.
-// Channel files must be named *_channel.js.
-
-const channels = require.context('.', true, /_channel\.js$/)
-channels.keys().forEach(channels)
 (() => {
  
   const wikiInput = document.getElementById("js-wikipedia-input"); //input部分
@@ -70,5 +65,5 @@ channels.keys().forEach(channels)
     wikiFetch(inputValue);
   };
 
-  wikiButton.addEventListener("click", wikiData, false);
+  wikiButton.addEventListener('click', wikiData, false);
 })();
